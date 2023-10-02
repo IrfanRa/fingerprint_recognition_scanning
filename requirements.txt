@@ -1,10 +1,37 @@
 Problem Statement:
-    Develop a Fingerprint recognition biometric authentication attendance system based on Blockchain technology,
-    that can accurately identify individuals using fingerprint scanning recognition. 
-
-The input variables/features for this problem: 
+    Develop a Fingerprint recognition biometric authentication attendance system based on Blockchain technology,that can accurately identify individuals using     fingerprint scanning recognition. 
+    The input variables/features for this problem: 
     • Fingerprint image of the output variable/feature for this problem: 
     • True/False (indicating whether the fingerprint image matches a known individual) biometric authentication dataset (fingerprint scanning) 
+
+
+Here's the project structure:
+biometric_authentication_project/
+├── data/
+│   ├── fingerprint_dataset/
+│   │   ├── np_data/
+│   │   │   ├── img_real.npy
+│   │   │   ├── img_train.npy
+│   │   │   ├── label_real.npy
+│   │   │   └── label_train.npy
+│   │   ├── real_data/
+│   │   │   ├── 00001.bmp
+│   │   │   ├── 00002.bmp
+│   │   │   └── ...
+│   │   └── train_data/
+│   │       ├── 00000_00.bmp
+│   │       ├── 00000_01.bmp
+│   │       └── ...
+├── database/
+│   ├── biometric_data.db
+├── code/
+│   ├── task1_database_integration.py
+│   ├── task2_data_analysis_preprocessing.py
+│   ├── task3_feature_extraction.py
+├── requirements.txt
+└── README.md
+
+
 
 Task No.1: 
     1.1. Develop a code regarding export/import and SQLite database integration procedures with Python.
